@@ -1,0 +1,98 @@
+ul {
+	list-style-type: none;
+	margin-top: -80px;
+	margin-left: -55px;
+	background-color: lightblue;
+	font-size: 1em; 
+	font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  
+li {
+	float: left;
+	padding-top: 15px;
+  }
+  
+li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 18px 17px;
+	text-decoration: none; 
+  }
+  
+li a:hover {
+	width: 130px; 
+	color: lightblue;
+	} 
+
+	
+
+/* pictures */
+* {
+	box-sizing: border-box;
+}
+	  
+body {
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-family: Arial;
+}
+	  
+/* Center website */
+.main {
+	max-width: 1000px;
+	margin: auto;
+	margin-top: -70px; 
+	margin-left: 30px;
+}
+	  
+h1 {
+	font-size: 20px;
+	word-break: break-all;
+	font-family: Verdana, Geneva, sans-serif;
+}
+	  
+.row {
+	margin: 8px -16px;
+}
+	  
+/* Add padding BETWEEN each column */
+.row,.row > .column {
+	padding: 8px;
+}
+	  
+/* Create four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+}
+	  
+/* Clear floats after rows */ 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+	  
+/* Content */
+.content {
+	background-color: white;
+	padding: 10px;
+	
+}
+	  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+.column {
+ 	width: 50%;
+}
+}
+	  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+}
+
+
+
+
+
