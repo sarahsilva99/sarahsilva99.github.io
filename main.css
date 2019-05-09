@@ -1,152 +1,95 @@
-
-	.st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
-	.st1{opacity:0.57;fill:#D0D651;enable-background:new    ;}
-	.st2{opacity:0.57;fill:#67D6CB;enable-background:new    ;}
-	.st3{opacity:0.57;fill:#3BA1E0;enable-background:new    ;}
-	.st4{opacity:0.57;fill:#9EB9D8;enable-background:new    ;}
-	.st5{opacity:0.57;fill:#495CE8;enable-background:new    ;}
-	.st6{opacity:0.57;fill:#CBCCC4;enable-background:new    ;}
-	.st7{opacity:0.57;fill:#23E3E8;enable-background:new    ;}
-	.st8{opacity:0.57;fill:#F2D249;enable-background:new    ;}
-	.st9{opacity:0.57;fill:#C3BDC9;enable-background:new    ;}
-	.st10{opacity:0.57;fill:#8FF2E9;enable-background:new    ;}
-	.st11{opacity:0.57;fill:#0D08F4;enable-background:new    ;}
-	.st12{opacity:0.57;fill:#EFD565;enable-background:new    ;}
-  
-
-html, body {
-	margin: auto;
-	margin-top: 30px;
-	background-color: white; 
-} 
-
 ul {
 	list-style-type: none;
-	margin-top: -60px;
-	padding-left: 0px;
-  /* overflow: hidden; */
+	margin-top: -80px;
+	margin-left: -55px;
 	background-color: lightblue;
 	font-size: 1em; 
 	font-family: 'Barlow Semi Condensed', sans-serif;
   }
   
 li {
-		float: left;
-		padding-top: 15px;
+	float: left;
+	padding-top: 15px;
   }
   
- li a {
+li a {
     display: inline;
     color: black;
     text-align: center;
     padding: 18px 17px;
-		text-decoration: none; 
+	text-decoration: none; 
   }
   
-  li a:hover {
+li a:hover {
 	width: 130px; 
 	color: lightblue;
-  } 
+	} 
 
-#changingword {
-	color: lightblue; 
-	font-size: 1em; 
 	
+
+/* pictures */
+* {
+	box-sizing: border-box;
 }
- 
+	  
+body {
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-family: Arial;
+}
+	  
+/* Center website */
+.main {
+	max-width: 1000px;
+	margin: auto;
+	margin-top: -70px; 
+	margin-left: 30px;
+}
+	  
 h1 {
-	/* margin-left: 110px; */
-	font-family: 'Sorts Mill Goudy', serif;
-	font-size: 30pt; 
-	color: black; 
-	/* position: absolute; */
+	font-size: 20px;
+	word-break: break-all;
+	font-family: Verdana, Geneva, sans-serif;
 }
-
-.container {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 10% auto 10%;
-	/* height: 100vh; */
-	
+	  
+.row {
+	margin: 8px -16px;
 }
-
-nav {
-	grid-column: 1 / -1;
-	grid-row: 1/-1; 
-	z-index: 2; 
-	display:inline;
+	  
+/* Add padding BETWEEN each column */
+.row,.row > .column {
+	padding: 8px;
 }
-
-.name {
-	grid-column: 1 / -1;
-	grid-row: 2/-1;
-	z-index:2;
-	padding-left: 100px;
-	padding-top: 160px;
-
+	  
+/* Create four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
 }
-#background {
-	grid-column: 1 / -1;
-	grid-row: 1/-1;
-	z-index:1;
- 
+	  
+/* Clear floats after rows */ 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
-
-footer {
-	grid-column: 1 / -1;
-	grid-row: 3/-1;
-	background-color:lightgray;
-	margin-top: 0px;
-
-}
-
-/* Style all font awesome icons */
-.fa {
+	  
+/* Content */
+.content {
+	background-color: white;
 	padding: 10px;
-	font-size: 70px;
-	width: 20px;
-	text-align: center;
-	text-decoration: none;
-	margin-top: 50px;
-	
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-	opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  .fa-facebook {
-	background: #3B5998;
-	color: white;
-  }
-  
-  .fa-instagram{
-	background: purple;
-	color: white;
-  }
-
-  .fa-twitter{
-	background: lightskyblue;
-	color: white;
-  }
-
-  .fa-github{
-	background: black;
-	color: white;
-  }
-
-  .fa-linkedin{
-	background: blue;
-	color: white;
-  }
-
-
-
-
-
+}
+	  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+.column {
+ 	width: 50%;
+}
+}
+	  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+}
 
 
 

@@ -1,64 +1,39 @@
-#b1{
-    animation: move 5s infinite; 
-}
-#b2{
-    animation: move 11s infinite; 
-}
-#b3{
-    animation: move 7s infinite; 
-}
-#b4{
-    animation: move 6s infinite; 
-}
-#g5{
-    animation: move 8s infinite; 
-}
-#g6{
-    animation: move 5s infinite; 
-}
-#b7{
-    animation: move 9s infinite; 
-}
-#g8{
-    animation: move 7s infinite; 
-}
-#b9{
-    animation: move 9s infinite; 
-}
-#b10{
-    animation: move 10s infinite; 
-}
-#b11{
-    animation: move 10.5s infinite; 
-}
-#b12{
-    animation: move 11s infinite; 
-}
-#b13{
-    animation: move 7s infinite; 
+html, body {
+	margin: auto;
+	margin-top: 30px;
+	/* background-color: white;  */
+} 
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 10% auto 10%;
+	height: 100vh;
+	/* background-color: #f2f2f2; */
+	
 }
 
-@-webkit-keyframes move {
-	from {
-			transform:rotate(0deg);
-			-webkit-transform:rotate(0deg);}
-	to {
-			transform:rotate(360deg);
-			-webkit-transform:rotate(360deg);
-	}
+nav {
+	grid-column: 1 / -1;
+	grid-row: 1/-1; 
+	z-index: 2; 
+	display:inline;
 }
 
-
-@keyframes move {
-	from {
-			transform:rotate(0deg);
-			-webkit-transform:rotate(0deg);}
-	to {
-			transform:rotate(360deg);
-			-webkit-transform:rotate(360deg);
-	}
+.main {
+	grid-column: 2 / -1;
+	grid-row: 2/-1;
+	z-index:2;
+ 
 }
 
+h2 {
+	margin-left: 245px;
+	font-family: 'Sorts Mill Goudy', serif;
+	color: lightblue;
+	font-size: 3em; 
+	text-decoration: underline;
+}
 
 /* The dropdown container */
 .dropdown {
@@ -72,13 +47,13 @@
 	border: none;
 	outline: none;
 	color: black;
-	padding-top: 15px;
+	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit; /* Important for vertical align on mobile phones */
 	margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a background color to navbar links on hover */
+  /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
 	color: lightblue
   }
@@ -95,7 +70,7 @@
   
   /* Links inside the dropdown */
   .dropdown-content a {
-	float: none;
+	float: center;
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
@@ -112,11 +87,6 @@
   .dropdown:hover .dropdown-content {
 	display: block;
   }
-
-
-
-
-
 
 
 
